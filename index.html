@@ -155,7 +155,7 @@
         margin: 0;
     }
 
-@media only screen and (min-width: 370px){
+    @media only screen and (min-width: 370px){
     
     main{
         background-image: linear-gradient(#293241,#29324138), url(./img/blue-background-7470781_1920.jpg);
@@ -214,57 +214,50 @@
     
     .s2{
         height: 550px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 2fr);
         }
 
     .s2 .promo{
-        height: 250px;
-        width: 400px;
+        height: 290px;
         background-color: #00000060;
-        border: 5px solid #EE6C4D;
+        border: none;
         padding: 20px;
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    .s2 .lp {
+        background-color: rgba(255, 255, 255, 0.456);
+        grid-column: 1/5;
+        border: 5px solid #EE6C4D;
+        border-radius: 10px;
     }
 
     .s2 .carousel{
         height: 250px;
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+
+    .s2 .carousel-inner img{
+        position: relative;
+        left: 30%;
+    }
+
+    .s2 img{
+        height: 250px;
+        width: auto;
+        display: flex;
+        justify-content: center;
     }
 }
 
-@media only screen and (min-width: 980px) and (max-width:2024px) {
-    main{
-        height: 140vh;
-    }
-
-    .welcome h1{
-        font-size: 70px;
-        position: absolute;
-        transform: translate(50%, -50%);
-    }
-
-    .s2{
-        height: 350px;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .s2 .promo{
-        height: 200px;
-        width: 500px;
-        margin-top: 60px;
-        margin-left: 0px;
-        background-color: #00000060;
-        border: 5px solid #EE6C4D;
-        padding: 20px;
-    }
-
-    .pics{
-        height: 350px;
-        width: 100%;
-        margin: 0px;
-        border: 5px solid #EE6C4D
+@media only screen and (min-width: 980px) {
+.s2 .carousel-inner img{
+        position: relative;
+        left: 37%;
     }
 }
 
@@ -282,44 +275,46 @@
             </div>
 
             <!--Carrusel con imagenes de ultimos productos-->
-            <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./img/ornament-6845499_1920.jpg" class="carrusel" alt="Bola de navidad">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+            <div class="lp">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./img/ornament-6845499_1920.jpg" class="carrusel" alt="Bola de navidad">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bolas de navidad</h5>
+                            <p>Echa un vistazo a nuestras bolas</p>
+                        </div>
+                        </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/male-3137060_1920.jpg" class="carrusel" alt="camiseta tye dye">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Camisetas tye dye</h5>
+                            <p>Echa un vistazo a nuestras camisetas</p>
+                        </div>
+                    </div>
+                        <div class="carousel-item">
+                        <img src="./img/cups-7124743_1920.jpg" class="carrusel" alt="nuevas tazas">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nuevas tazas</h5>
+                            <p>Echa un vistazo a nuestros nuevos diseños</p>
+                        </div>
                     </div>
                     </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="./img/male-3137060_1920.jpg" class="carrusel" alt="camiseta tye dye">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                     </div>
-                </div>
-                    <div class="carousel-item">
-                    <img src="./img/cups-7124743_1920.jpg" class="carrusel" alt="nuevas tazas">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                </div>
+            </div>
         </section>
     </main>
 
