@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles_putsart.css">
+    <link rel="stylesheet" href="../css/styles_putsart.css">
     <title>PUTSART-PRODUCTOS</title>
 </head>
 <body>
@@ -61,111 +61,10 @@
         
     </header>
 
-    <main>
-        <style>
-
-            *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: "Roboto", serif;
-            }
-        
-            main{
-            background-image: linear-gradient(#293241,#29324138), url(../img/blue-background-7470781_1920.jpg);
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            }
-
-            h1{
-            text-align: center;
-            padding-top: 20px;
-            color: #a7c4e9;
-            font-size: 100%;
-            text-shadow: 0px 0px 10px black;
-            }
-
-            .s1 {
-                height: 50px;
-                margin: 30px 0px 30px 0px;
-            }
-
-            .s1 .button{
-                display: flex;
-                justify-content: center;
-                }
-
-            .s1 .button select {
-                padding: 10px 20px;
-                border-radius: 5px;
-                color: #98C1D9;
-                background-color: #293241;
-                border-color:#98C1D9;
-            }
-
-            .s2 {
-                height: 100%;
-                margin: 0px 20px 0px 20px;
-            }
-
-            .s2 .products {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-            }
-
-            .s2 .products img {
-                width: 40%;
-                margin: 30px 0px;
-            }
-
-            .next {
-                display: flex;
-                justify-content: center;
-                padding: 5% 0 5% 0;
-            }
-
-            .next button {
-                background-color: #EE6C4D;
-                color:white;
-                padding: 10px 20px;
-                border-radius: 5px;
-                border-style:none;
-            }
-
-            .next button a {
-                text-decoration: none;
-                color:white;
-            }
-
-            .next button a:hover {
-                color: #000000;
-            }
-
-            .next button:hover{
-                background-color: #98C1D9;
-                color: #000000;
-            }
-
-            @media only screen and (min-width: 768px){
-                h1{
-                    font-size: 00%;
-                }
-                .s2 .products img {
-                width: 30%;
-            }
-            }
-
-            @media only screen and (min-width:1024px){
-                .s2 .products img {
-                width: 15%;
-            }
-            }
-        </style>
-        <h1>NUESTROS PRODUCTOS</h1>
-        <section class="s1">
-            <div class="button">
+    <main class="catalogo">
+        <h1 class="ch1">NUESTROS PRODUCTOS</h1>
+        <section class="cs1">
+            <div class="cbutton">
                 <select type="dropdown">
                     <option>Seleccione</option>
                     <option>Ilustraciones</option>
@@ -177,7 +76,7 @@
             </div>
         </section>
 
-        <section class="s2">
+        <section class="cs2">
             <div class="products">
                 <img src="../img/t-shirt-design-2336850.jpg" alt="Ejemplo de producto">
                 <img src="../img/t-shirt-design-2336850.jpg" alt="Ejemplo de producto">
@@ -194,7 +93,7 @@
             </div>
         </section>
 
-        <section class="next">
+        <section class="cnext">
         <button type="button"><a href="./index.html">Siguiente</a></button> 
         </section>
     </main>

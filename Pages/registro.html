@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles_putsart.css">
+    <link rel="stylesheet" href="../css/styles_putsart.css">
     <title>PUTSART-REGISTRATE</title>
 </head>
 <body>
@@ -61,94 +61,9 @@
         </section>
     </header>
 
-    <main>
-        <style>
-
-            *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: "Roboto", serif;
-            }
-        
-            main{
-            background-image: linear-gradient(#293241,#29324138), url(../img/blue-background-7470781_1920.jpg);
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            }
-
-            h1{
-            text-align: center;
-            padding-top: 20px;
-            color: #a7c4e9;
-            font-size: 200%;
-            text-shadow: 0px 0px 10px black;
-            }
-            
-            .main{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                }
-
-            .container {
-                max-width: 700px;
-                padding:20px 10px;
-                margin:20px auto 0px auto;
-                }
-
-            .container form {
-                display: flex;
-                flex-wrap:wrap;
-                justify-content:space-between;
-                margin: 10px 12px 0 0;
-                }
-
-            form .form-group {
-                margin-bottom: 40px;
-                font-size: 12px;  
-                color: #98C1D9;            
-            }
-
-            .form-group input {
-                padding: 12px 100px 12px 10px;
-                font-size: 14px;
-                border-radius: 10px;
-            } 
-
-            .PyC {
-                text-align: center;
-                padding-bottom: 50px;
-            }
-
-            .PyC p {
-                display: inline-block;
-                font-size: 12px;
-                margin: 0 auto;
-            }
-
-            .PyC a {
-                margin: 0 auto;
-                
-            }
-
-            .submit {
-                text-align: center;
-                margin-bottom: 30px;
-            }
-
-            .submit button {
-                border-radius: 10px;
-                padding: 5px;
-                background-color: #EE6C4D;
-            }
-
-        </style>
-
-        <h1>Registro</h1>
-
-        <section class="container">
+    <main class="reg">
+        <h1 class="r-h1">Registro</h1>
+        <section class="r-container">
         <form action="#">
         
         <div class="form-group">
@@ -213,7 +128,7 @@
             <p style="color: #a7c4e9;">Acepto los <a href="#" style="font-size: 12px;">terminos de uso y las  políticas y condiciones</a></p>
             </div>
         
-            <div class="submit">
+            <div class="r-submit">
             <button type="submit">Enviar formulario</button>
             </div>
 

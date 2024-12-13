@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles_putsart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/styles_putsart.css">
     <title>PUTSART-INICIO</title>
 </head>
 <body>
@@ -22,8 +26,8 @@
 
             <div class="log">
                 <nav>
-                    <a href="">Registrarse</a>
-                    <a href="">Accede</a>
+                    <a href="./Pages/registro.html">Registrarse</a>
+                    <a href="./Pages/log_in.html">Accede</a>
                 </nav>
             </div>
 
@@ -61,221 +65,21 @@
         </section>
     </header>
 
-    <main>
-
-        <style>
-
-    *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", serif;
-}
-
-    main{
-    background-image: linear-gradient(#293241,#29324138), url(./img/blue-background-7470781_1920.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-}
-
-    .welcome{
-    background-image: linear-gradient(#3d5a80,#98c1d926), url(./img/t-shirt-design-2336850.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 5px;
-    height: 500px;
-    position: relative;
-}
-
-    .welcome h1{
-    text-align: center;
-    padding-top: 20px;
-    color: #a7c4e9;
-    font-size: 80px;
-    text-shadow: 2px 2px 50px black;
-}
-
-    .s2{
-    height: 500px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-    .s2 .promo{
-    height: 200px;
-    width: 500px;
-    margin-top: 100px;
-    margin-left: 100px;
-    background-color: #00000060;
-    border: 5px solid #EE6C4D;
-    padding: 20px;
-    position: relative;
-}
-
-    .s2 .promo h2{
-    color: #EE6C4D;
-}
-
-    .s2 .promo p{
-    color: white;
-    margin-top: 10px;
-}
-
-    .s2 .promo a{
-    color: white;
-    text-decoration: none;
-    position: absolute;
-    bottom: 20px;
-    right: 40px;
-    background-color: #3d5a80;
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-
-    .s2 .promo a:hover{
-    background-color: #a7c4e9;
-    color: #000000;
-}
-
-    .pics{
-    height: 300px;
-    width: 400px;
-    margin-top: 100px;
-    margin-right: 100px;
-    border: 5px solid #EE6C4D;
-}
-
-    .carrusel{
-        height: 300px;
-        width: auto;
-        margin: 0;
-    }
-
-    @media only screen and (min-width: 370px){
-    
-    main{
-        background-image: linear-gradient(#293241,#29324138), url(./img/blue-background-7470781_1920.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height: 100%;
-    }
-
-    .welcome h1{
-        font-size: 40px;
-        position: absolute;
-        bottom: 40%;
-        right: 50%;
-        transform: translate(50%, -50%);
-    }
-
-    .s2{
-        height: 550px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        }
-
-    .s2 .promo{
-        height: 200px;
-        width: 100%;
-        margin-top: 0px;
-        margin-left: 0px;
-        background-color: #00000060;
-        border: 5px solid #EE6C4D;
-        padding: 20px;
-    }
-
-    .s2 .carousel{
-        margin-left: 0%;
-    }
-
-    .carrusel{
-        height: 230px;
-    }
-
-    .pics{
-        height: 350px;
-        width: 100%;
-        margin: 0px;
-        border: 5px solid #EE6C4D
-    }
-
-}
-
-@media only screen and (min-width: 768px){
-    main{
-        height:1%;
-    }
-    
-    .s2{
-        height: 550px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 2fr);
-        }
-
-    .s2 .promo{
-        height: 290px;
-        background-color: #00000060;
-        border: none;
-        padding: 20px;
-        grid-column: 1/5;
-        grid-row: 2/3;
-    }
-
-    .s2 .lp {
-        background-color: rgba(255, 255, 255, 0.456);
-        grid-column: 1/5;
-        border: 5px solid #EE6C4D;
-        border-radius: 10px;
-    }
-
-    .s2 .carousel{
-        height: 250px;
-        grid-column: 2/4;
-        grid-row: 1/2;
-    }
-
-    .s2 .carousel-inner img{
-        position: relative;
-        left: 30%;
-    }
-
-    .s2 img{
-        height: 250px;
-        width: auto;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media only screen and (min-width: 980px) {
-.s2 .carousel-inner img{
-        position: relative;
-        left: 37%;
-    }
-}
-
-        </style>
+    <main class="index">
 
         <section class="welcome">
-            <h1>BIENVENIDO</h1>
+            <h1 class="wh1">Bienvenido</h1>
         </section>
 
-        <section class="s2">
-            <div class="promo">
-                <h2>Disfruta de esta promoción:</h2>
+        <section class="is2">
+            <div class="promo" data-aos="fade-up" class="welcome">
+                <h2 class="ih2">Disfruta de esta promoción:</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic molestias quo rem vel impedit asperiores facere ipsum repudiandae assumenda a.</p>
                 <a href="">Más info</a>
             </div>
 
             <!--Carrusel con imagenes de ultimos productos-->
-            <div class="lp">
+            <div class="lp" data-aos="flip-down" class="welcome">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -342,5 +146,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 </html>

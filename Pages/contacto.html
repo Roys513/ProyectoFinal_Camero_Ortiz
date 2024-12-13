@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles_putsart.css">
+    <link rel="stylesheet" href="../css/styles_putsart.css">
     <title>PUTSART-CONTACTO</title>
 </head>
 <body>
@@ -61,153 +61,16 @@
         
     </header>
 
-    <main>
-        <style>
-
-            *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: "Roboto", serif;
-            }
+    <main class="contacto">
+        <h1 class="co-h1">CONTACTO</h1>
+        <section class="co-container">
         
-            main{
-            background-image: linear-gradient(#293241,#29324138), url(../img/blue-background-7470781_1920.jpg);
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            height: 100vh;
-            }
-
-            h1{
-            text-align: center;
-            padding-top: 20px;
-            color: #a7c4e9;
-            font-size: 100%;
-            text-shadow: 0px 0px 10px black;
-            }
-        
-            .container{
-            padding-top: 0px;
-            width: 100%;
-            height: 100%;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 70% 20%;
-            }
-
-            .info {
-            display: grid;
-            grid-column: 1/2;
-            grid-row: 1/2;
-            color: #FFE599;
-            }
-
-            .info h2 {
-            height: 60px;
-            font-size: 200%;
-            font-style: bold;
-            text-transform: uppercase;
-            text-shadow: 0px 0px 10px black;
-            text-align: center;
-            }
-
-            .info p {
-            height: 50px;
-            margin: 0px 30px 0px 30px;
-            text-align: center;
-            font-size: 100%;
-            text-shadow: 0px 0px 10px black;
-            }
-
-            .container .cont {
-            display: grid;
-            grid-column: 1/2;
-            grid-row: 2/3;   
-            }
-
-            .cont  iframe{
-            height: 90%;
-            width: 50%;
-            border-radius: 10px;
-            display: grid;
-            place-self: start center;
-            }
-
-            @media only screen and (min-width:480px){
-
-                main{
-                    height: 100vh;
-                }
-
-                h1{
-                    font-size: 200%;
-                }
-
-                .container{
-                    padding-top: 10%;
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 450px;
-                }
-
-                .info{
-                    grid-column: 2/3;
-                    padding-top: 50px;
-                }
-
-                .info h2{
-                    height: 60%;
-                    font-size: 150%;
-                }
-
-                .info p{
-                    margin: 0px;
-                    margin-top: -50px;
-                    font-size: 100%;
-                }
-
-                .container .cont {
-                    grid-column: 1/2;
-                    grid-row: 1/2;
-                    
-                }
-
-                .cont  iframe{
-                    height: 50%;
-                    width: 100%;
-                    place-self: center;
-                }
-            }
-        
-            @media only screen and (min-width:768px){
-                .cont iframe{
-                    height: 50%;
-                    width: 80%;
-                }
-            }
-
-            @media only screen and (min-width:992px){
-                .container{
-                    padding-top:5%;
-                }
-
-                .cont  iframe{
-                    height: 100%;
-                    width: 100%;
-                }
-
-            }
-        </style>
-
-        <h1>CONTACTO</h1>
-        <section class="container">
-        
-        <div class="info">
-        <h2>¿Donde estamos?:</h2>
+        <div class="co-info">
+        <h2 class="co-h2">¿Donde estamos?:</h2>
         <p>C. Ajoreña, 63, 38520 Igueste de Candelaria, Santa Cruz de Tenerife</p>
-        <h2>Horario:</h2>
+        <h2 class="co-h2">Horario:</h2>
         <p>De 9:00h a 17:00h</p>
-        <h2>Teléfono:</h2>
+        <h2 class="co-h2">Teléfono:</h2>
         <p>64365826</p>
         </div>
 

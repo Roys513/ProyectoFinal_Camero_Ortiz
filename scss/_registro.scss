@@ -1,0 +1,58 @@
+.r-h1{
+    text-align: center;
+    padding-top: 20px;
+    color: #a7c4e9;
+    font-size: 200%;
+    text-shadow: 0px 0px 10px black;
+}
+    
+.r-container{
+    max-width: 700px;
+    padding:20px 10px;
+    margin:20px auto 0px auto;
+
+    form{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        margin: 10px 12px 0 0;
+        
+        .form-group{
+            margin-bottom: 40px;
+            font-size: 12px;  
+            color: #98C1D9;  
+            
+            input{
+                padding: 12px 100px 12px 10px;
+                font-size: 14px;
+                border-radius: 10px;
+            } 
+        }
+    }
+}
+
+.PyC{
+    text-align: center;
+    padding-bottom: 50px;
+
+    p{
+        display: inline-block;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+
+    a{
+        margin: 0 auto;   
+    }
+}
+
+.r-submit{
+    text-align: center;
+    margin-bottom: 30px;
+
+    button{
+        border-radius: 10px;
+        padding: 5px;
+        background-color: #EE6C4D;
+    }
+}
