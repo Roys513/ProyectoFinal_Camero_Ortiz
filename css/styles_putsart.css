@@ -1,16 +1,15 @@
 .welcome {
   height: 500px;
-  display: flex;
-  justify-self: center;
+  display: grid;
 }
 .welcome .wh1 {
   font-family: "Satisfy", cursive;
   font-weight: 400;
   font-style: normal;
+  text-align: center;
   align-self: center;
   padding-top: 0px;
   color: #dec884;
-  font-size: 0px;
   text-shadow: 2px 2px 80px #a7c4e9;
 }
 
