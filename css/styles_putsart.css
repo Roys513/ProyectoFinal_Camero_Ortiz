@@ -402,6 +402,16 @@
   font-size: 14px;
   border-radius: 10px;
 }
+.r-container form .fnac {
+  margin-bottom: 40px;
+  font-size: 12px;
+  color: #98C1D9;
+}
+.r-container form .fnac input {
+  padding: 12px 140px 12px 10px;
+  font-size: 14px;
+  border-radius: 10px;
+}
 
 .PyC {
   text-align: center;
@@ -426,6 +436,41 @@
   background-color: #EE6C4D;
 }
 
+@media only screen and (min-width: 280px) and (max-width: 584px) {
+  .r-container {
+    display: grid;
+    align-self: center;
+    max-width: 700px;
+    padding: 20px 10px;
+    margin: 20px auto 0px auto;
+  }
+  .r-container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 12px 0 0;
+  }
+  .r-container form .form-group {
+    margin-bottom: 40px;
+    font-size: 12px;
+    color: #98C1D9;
+  }
+  .r-container form .form-group input {
+    padding: 12px 100px 12px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  .r-container form .fnac {
+    margin-bottom: 40px;
+    font-size: 12px;
+    color: #98C1D9;
+  }
+  .r-container form .fnac input {
+    padding: 12px 150px 12px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+}
 .infocorp {
   background-image: linear-gradient(#293241, rgba(41, 50, 65, 0.2196078431)), url(../img/blue-background-7470781_1920.jpg);
   background-size: cover;
