@@ -200,10 +200,11 @@
   text-decoration: none;
   color: white;
 }
-.cnext button a:hover {
+.cnext a:hover {
   color: #000000;
+  background-color: #98C1D9;
 }
-.cnext button button:hover {
+.cnext button:hover {
   background-color: #98C1D9;
   color: #000000;
 }

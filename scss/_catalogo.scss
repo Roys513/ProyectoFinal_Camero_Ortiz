@@ -60,9 +60,10 @@
                 text-decoration: none;
                 color:white;
             }
-        
+        }
             a:hover {
                 color: #000000;
+                background-color:#98C1D9;
             }
         
             button:hover{
@@ -70,7 +71,7 @@
                 color: #000000;
             }
         }
-    }
+    
 
     @media only screen and (min-width: 768px){
         .ch1{
