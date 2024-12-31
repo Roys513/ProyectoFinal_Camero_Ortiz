@@ -3,20 +3,22 @@ $color1:#EE6C4D;
 $color2:#FFE599;
 $color3:#98C1D9;
 $color4:#293241;
+$color5:#e6e6e6;
 
 .infocorp{
-background-image: linear-gradient(#293241,#29324138), url(../img/blue-background-7470781_1920.jpg);
-background-size: cover;
-background-position: center;
-background-attachment: fixed
+    background:{
+        image: linear-gradient(to bottom, #ffffff77, #ffffff77), url(../img/Imgperro1.jpg);
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    }
 }
 
 .ic-h1{
 text-align: center;
 padding-top: 20px;
-color: #a7c4e9;
-font-size: 40px;
-text-shadow: 2px 2px 50px black;
+color: $color4;
+font-size: 30px;
 }
 
 .ic-grid{
@@ -37,9 +39,9 @@ text-shadow: 2px 2px 50px black;
     background-image: url(../img/Trabajo.jpg);
     background-size: cover;
     background-position: center;
-    border: 5px solid $color1;
-    border-radius: 3px;
-    box-shadow: 0 0 5px black;
+    border: 2px solid $color4;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
 }
 
 .p1{
@@ -52,16 +54,14 @@ text-shadow: 2px 2px 50px black;
         text-align: center;
         text-transform: uppercase;
         font-weight: bold;
-        color: $color2;
-        text-shadow: 0 0 20px black;
+        color: $color4;
     }
 
     p{
         font-size: 12px;
-        color: white;
+        color: black;
         text-align: justify;
         padding-top: 10px;
-        text-shadow: 0 0 20px black;
     }
 }
 
@@ -73,9 +73,9 @@ text-shadow: 2px 2px 50px black;
     background-image: url(../img/Manualidad.jpg);
     background-size: cover;
     background-position: center;
-    border: 5px solid $color1;
-    border-radius: 3px;
-    box-shadow: 0 0 5px black;
+    border: 2px solid $color4;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
 }
 
 .p2{
@@ -88,16 +88,14 @@ text-shadow: 2px 2px 50px black;
         text-align: center;
         text-transform: uppercase;
         font-weight: bold;
-        color: $color2;
-        text-shadow: 0 0 20px black;
+        color: $color4;
     }
 
     p{
         font-size: 12px;
-        color: white;
+        color: black;
         text-align: justify;
         padding-top: 10px;
-        text-shadow: 0 0 20px black;
     }
 }
 
@@ -109,9 +107,9 @@ text-shadow: 2px 2px 50px black;
     background-image: url(../img/Almacen.jpg);
     background-size: cover;
     background-position:center bottom;
-    border: 5px solid $color1;
-    border-radius: 3px;
-    box-shadow: 0 0 5px black;
+    border: 2px solid $color4;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
 }
 
 .p3{
@@ -125,16 +123,14 @@ text-shadow: 2px 2px 50px black;
         text-align: center;
         text-transform: uppercase;
         font-weight: bold;
-        color: $color2;
-        text-shadow: 0 0 20px black;
+        color: $color4;
     }
     
     p{
         font-size: 12px;
-        color: white;
+        color: black;
         text-align: justify;
         padding-top: 10px;
-        text-shadow: 0 0 20px black;
     }
 }
 
@@ -153,16 +149,14 @@ text-shadow: 2px 2px 50px black;
     place-items: center;
 
     .ic-h2{
-        font-size: 17px;
+        font-size: 12px;
         text-align: center;
         text-transform: uppercase;
         font-weight: bold;
-        text-shadow: 0 0 5px black;
         }
 
     p{
-        font-size: 12px;
-        text-shadow: 0 0 5px black;
+        font-size: 10px;
         }
     }
     
@@ -184,12 +178,10 @@ text-shadow: 2px 2px 50px black;
 
         .ic-h2{
             font-size: 12px;
-            text-shadow: 0 0 5px black;
         }
 
         p{
-            font-size: 12px;
-            text-shadow: 0 0 5px black;
+            font-size: 10px;
         }
     }
 
@@ -201,51 +193,16 @@ text-shadow: 2px 2px 50px black;
         place-items: center;
 
         .ic-h2{
-            font-size: 15px;
+            font-size: 12px;
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
-            text-shadow: 0 0 5px black;
         }
 
         p{
-            font-size: 12px;
-            text-shadow: 0 0 5px black;
+            font-size: 10px;
+            font-weight:500;
         }
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .p1 {
-        .ic-h2{
-        font-size: 20px;
-        text-shadow: 0 0 5px black;
-        }
-
-        p{
-            font-size: 15px;
-            padding: 0px 10px 0px 10px;
-        }
-    }
-
-    .p2{  
-        .ic-h2{
-            font-size: 20px;
-            }
-
-        p{
-            font-size: 15px;
-            }
-        }
-
-    .p3 {        
-        .ic-h2{
-        font-size: 20px;
-        }
-
-        .p3 p{
-        font-size: 15px;
-        }   
     }
 }
 
@@ -264,17 +221,15 @@ text-shadow: 2px 2px 50px black;
     place-items: center;
 
         .ic-h2{
-            font-size: 20px;
+            font-size: 18px;
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
-            text-shadow: 0 0 5px black;
         }
 
         p{
-            font-size: 15px;
+            font-size: 12px;
             text-align: justify;
-            text-shadow: 0 0 5px black;
             padding: 0px 10px 0px 10px;
         }
     }
@@ -296,18 +251,16 @@ text-shadow: 2px 2px 50px black;
         place-items: center;
 
         .ic-h2{
-            font-size: 20px;
+            font-size: 18px;
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
-            text-shadow: 0 0 5px black;
         }
 
         p{
-            font-size: 15px;
+            font-size: 12px;
             text-align: justify;
             padding-top: 10px;
-            text-shadow: 0 0 5px black;
         }
     }
 
@@ -319,18 +272,16 @@ text-shadow: 2px 2px 50px black;
         place-items: center;
 
         .ic-h2{
-            font-size: 20px;
+            font-size: 18px;
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
-            text-shadow: 0 0 5px black;
         }
 
         p{
-            font-size: 15px;
+            font-size: 12px;
             text-align: justify;
             padding-top: 10px;
-            text-shadow: 0 0 5px black;
         }
     }
 }
@@ -354,14 +305,12 @@ text-shadow: 2px 2px 50px black;
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
-            text-shadow: 0 0 5px black;
             }
 
         p{
             align-self: start;
             font-size: 100%;
             text-align: justify;
-            text-shadow: 0 0 5px black;
             padding: 0px 30px 0px 30px;
         }
     }
@@ -387,7 +336,6 @@ text-shadow: 2px 2px 50px black;
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
-            text-shadow: 0 0 5px black;
         }
 
         p{
@@ -395,7 +343,6 @@ text-shadow: 2px 2px 50px black;
             font-size: 100%;
             text-align: justify;
             padding: 0px 30px 0px 30px;
-            text-shadow: 0 0 5px black;
         }
     }
 
@@ -411,7 +358,6 @@ text-shadow: 2px 2px 50px black;
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
-            text-shadow: 0 0 5px black;
         }
 
         p{
@@ -419,7 +365,6 @@ text-shadow: 2px 2px 50px black;
             font-size: 100%;
             text-align: justify;
             padding: 0px 30px 0px 30px;
-            text-shadow: 0 0 5px black;
         }
     }
 }
@@ -440,7 +385,7 @@ text-shadow: 2px 2px 50px black;
         }
 
         p{
-            font-size: 25px;
+            font-size: 20px;
         }
     }
 
@@ -453,11 +398,7 @@ text-shadow: 2px 2px 50px black;
         }
 
         p{
-            font-size: 25px;
-        }
-
-        p{
-            font-size: 25px;
+            font-size: 20px;
         }
     }
 
@@ -474,15 +415,13 @@ text-shadow: 2px 2px 50px black;
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
-            text-shadow: 0 0 5px black;
         }
 
         p{
             align-self: start;
-            font-size: 150%;
+            font-size: 20px;
             text-align: justify;
             padding: 0px 30px 0px 30px;
-            text-shadow: 0 0 5px black;
         }
     }
 }

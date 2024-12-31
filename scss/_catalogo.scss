@@ -1,9 +1,13 @@
+    .catalogo{
+        background-color: #e6e6e6;
+    }
+    
     .ch1{
     text-align: center;
     padding-top: 20px;
-    color: #a7c4e9;
+    color: #293241;
     font-size: 100%;
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 1px black;
     }
 
     .cs1{
@@ -13,17 +17,20 @@
         .cbutton{
             display: flex;
             justify-content: center;
-            
-            select{
-                padding: 10px 20px;
-                border-radius: 5px;
-                color: #98C1D9;
+
+            .btn{
                 background-color: #293241;
-                border-color:#98C1D9;
+                color:#98C1D9;
             }
-        
+
+            .dropdown-menu {
+                background-color:  #98C1D9;
+            }
+
+            .dropdown-item{
+                color: #293241;
+            }
         }
-    
     }
 
     .cs2 {
@@ -33,15 +40,43 @@
         .products {
             display: flex;
             flex-wrap: wrap;
+            gap: 30px;
             justify-content: space-around;
-        
+            
+            .card{
+                height: 40%;
+                width: 20%;
+                border: 1px solid grey;
+                box-shadow: 0px 0px 5px black;             
+            }
+
             img {
-                width: 40%;
+                width: 100%;
                 margin: 30px 0px;
             }
         
+            h2{
+                display: flex;
+                justify-content: start;
+                font-size: 130%;
+                margin: 0px 10px;
+            }
+
+            .description{
+                display: flex;
+                justify-content: start;
+                font-size: 100%;
+                margin: 0px 10px;
+            }
+
+            .price{
+                display: flex;
+                justify-content: end;
+                font-size: 150%;
+                font-weight:bolder;
+                margin: 20px 20px 20px 10px;
+            }
         }
-    
     }
 
     .cnext{
@@ -73,18 +108,32 @@
         }
     
 
-    @media only screen and (min-width: 768px){
+    @media only screen and (min-width: 350px) and (max-width: 600px){
         .ch1{
             font-size: 100%;
         }
+    
+        .cs2 {
+                        
+            .products {
 
-        .cs2 .products img {
-        width: 30%;
-        }
+                .card{
+                    height: 80%;
+                    width: 80%;              
+                }
+            }
+        }    
     }
 
-    @media only screen and (min-width:1024px){
-        .cs2 .products img {
-        width: 15%;
-        }
+    @media only screen and (min-width:600px) and (max-width:1024px){
+        .cs2 {
+                        
+            .products {
+
+                .card{
+                    height: 80%;
+                    width: 40%;              
+                }
+            }
+        }    
     }

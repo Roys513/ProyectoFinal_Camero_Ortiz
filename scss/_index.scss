@@ -1,8 +1,17 @@
     //Paleta de colores
 $color1:#EE6C4D;
-$color2:#FFE599;
+$color2:#cda93f;
 $color3:#98C1D9;
 $color4:#293241;
+$color5:#FFE599;
+
+//Fuentes
+@mixin Font-fraunces {font-family: "Fraunces", serif;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal;
+}
+
     
     .welcome{
     height: 500px;
@@ -10,19 +19,26 @@ $color4:#293241;
 
     
     .wh1{
-        font-family: "Satisfy", cursive;
-        font-weight: 400;
+        font-family: "Fraunces", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
         font-style: normal;
-        text-align: center;
-        align-self: center;
+        text-align: start;
+        align-self: start;
         padding-top: 0px;
-        color: #dec884;
-        text-shadow: 2px 2px 80px #a7c4e9;
+        color: $color4;
+        text-shadow: 0px 0px 1px #00000062;
     }
+    p{
+        color: $color4;
+        display: flex;
+        justify-content: center;
+        text-shadow: 0px 0px 1px #00000062;
+        }
 }
 
     .is2{
-    height: 500px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -32,18 +48,25 @@ $color4:#293241;
         width: 500px;
         margin-top: 100px;
         margin-left: 100px;
-        background-color: #00000060;
-        border: 5px solid #EE6C4D;
+        background: {
+            image: linear-gradient(to bottom, #98c1d975, #98c1d975), url(../img/Imgperro1.jpg);
+            size: cover;
+            position: center;
+        }
         padding: 20px;
         position: relative;
     
         .ih2{
-            color: #EE6C4D;
+            color: $color4;
         }
 
         p{
+            @include Font-fraunces;
             color: white;
             margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
         }
 
         a{
@@ -64,62 +87,159 @@ $color4:#293241;
     }
 }
 
+    .is3{
+        height: 450px;
+        box-shadow: 0px 0px 0px 0px 2px black;
+        .cat{
+            
+            .h2-cat{
+                height: 50px;
+                background-color: $color3;
+                @include Font-fraunces;
+                color: $color4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0px 1px 5px black;
+            }
+        }
 
-    .pics{
-    height: 300px;
-    width: 400px;
-    margin-top: 100px;
-    margin-right: 100px;
-    border: 5px solid #EE6C4D;
-}
+        .catcards{
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-around;
+            align-content: center;
+            
+            .catcard{
+                height: 65%;
+                width: 20%;
+                border: 2px solid grey;
+                border-radius: 10px;             
+            }
 
-    .carrusel{
-        height: 300px;
-        width: auto;
-        margin: 0;
+            a{
+                text-decoration: none;
+                color: #3d5a80;
+            }
+
+            img {
+                width: 100%;
+            }
+        
+            h2{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                font-size: 130%;
+                margin: 0px 10px;
+            }
+        }
     }
+    .is4{
+        background-color: $color4;
+        height: 270px;
+        box-shadow: 0px 0px 0px 0px 2px black;
+        .sm{
+            
+            .h2-sm{
+                height: 50px;
+                background-color: $color3;
+                @include Font-fraunces;
+                color: $color4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0px 1px 5px black;
+            }
+        }
 
+        .social-media{
+            color: white;
+            height: 200px;
+            display: block;
+            padding: 3% 2% 0% 2%;
+            justify-content: space-around;
+            text-align: center;
+            justify-content: center;
+            }
+
+            .fa-brands{
+                color: white;
+                margin: 0px 20px;
+                font-size: 50px;
+            }
+    }
+    
+        
     @media only screen and (min-width: 370px){
     
     .welcome { 
+        height: 100%;
+        grid-template-rows: 50px 50px;
         
         .wh1{
-        font-size: 500%;
+        grid-row: 1/2;
+        font-size: 150%;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        }
+
+        p{
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
         }
     }
 
     .is2{
-        height: 550px;
+        height: 300px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         
         .promo{
-            height: 200px;
+            height: 300px;
             width: 100%;
             margin-top: 0px;
             margin-left: 0px;
             background-color: #00000060;
-            border: 5px solid #EE6C4D;
+            border: none;
             padding: 20px;
+
+            h2{
+                text-align: center;
+                padding-top: 15px;
+                font-size: 22px;
+            }
+
+            p{
+                font-size: 14px;
+                text-align: justify;
+                padding-top: 25px;
+            }
+
+            a{
+                margin-bottom: 10px;
+            }
         }
+    }
 
-        .carousel{
-            margin-left: 0%;
+    .is3{
+        .catcards{
+            .catcard{
+                height: 120px;
+                width: 120px;
+            }
+            img{
+
+            }
+            h2{}
         }
     }
-
-    .carrusel{
-        height: 230px;
-    }
-
-    .pics{
-        height: 350px;
-        width: 100%;
-        margin: 0px;
-        border: 5px solid #EE6C4D
-    }
-
 }
 
 @media only screen and (min-width: 768px){
@@ -128,61 +248,75 @@ $color4:#293241;
     }
 
     .welcome { 
-        
+        height: 100%;
+        grid-template-rows: 100px 50px;
         .wh1{
-        font-size: 700%;
+            grid-row: 1/2;
+            font-size: 500%;
+        }
+
+        p{
+            grid-row: 2/3;
+            padding: 15px;
         }
     }
     
     .is2{
-        height: 550px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 2fr);
+        height: 300px;
         
         .promo{
             height: 290px;
             background-color: #00000060;
             border: none;
             padding: 20px;
-            grid-column: 1/5;
-            grid-row: 2/3;
         }
 
         .lp {
             background-color: rgba(255, 255, 255, 0.456);
-            grid-column: 1/5;
-            border: 5px solid #EE6C4D;
             border-radius: 10px;
         }
+    }
 
-        .carousel{
-            height: 250px;
-            grid-column: 2/4;
-            grid-row: 1/2;
-        }
-
-        .carousel-inner{
-            
-                img{
-                position: relative;
-                left: 30%;
+    .is3{
+        .catcards{
+            .catcard{
+                height: 60%;
+                width: 20%;
             }
-        }
-
-        img{
-            height: 250px;
-            width: auto;
-            display: flex;
-            justify-content: center;
+            h2{
+                height: 40%;
+                align-items: center;
+            }
         }
     }
 }
 
 
-@media only screen and (min-width: 980px) {
-.is2 .carousel-inner img{
-        position: relative;
-        left: 37%;
+@media only screen and (min-width: 980px) and (max-width: 2000px){
+    .is2 {  
+    .promo{
+        height: 300px;
+        background-position: center;
+        //grid-row: 1/2;
+
+        p{
+            font-size: 20px;
+            text-align: center;
+            padding: 30px 200px;
+        }
+        }
+    }
+
+    .is3{
+        .catcards{
+            .catcard{
+                height: 80%;
+                width: 20%;
+            }
+            h2{
+                height: auto;
+                align-items: center;
+            }
+        }
     }
 }

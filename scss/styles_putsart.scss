@@ -3,6 +3,7 @@ $color1:#EE6C4D;
 $color2:#FFE599;
 $color3:#98C1D9;
 $color4:#293241;
+$color5:#e6e6e6;
 
 //Inicio header
 
@@ -15,13 +16,13 @@ $color4:#293241;
 
 header{
     background-color: $color4;
+    box-shadow: 0px 0px 2px black;
 
     .header{
-    background-color: $color1;
+    background-color: $color3;
     height: 100px;
     display: flex;
     justify-content: space-between;
-    border-radius: 0px 0px 10px 10px;
     }
 
     .logo{
@@ -73,6 +74,10 @@ header{
             margin-left: 5px;
             color: $color4;
         }
+
+        a:hover{
+            color: white;
+        }
     }
 
     .nav{
@@ -103,6 +108,15 @@ header{
         left: 0px;
         top: 20px;
         z-index: 10;
+
+
+        .navbar-dark, .navbar[data-bs-theme=dark] {
+            --bs-navbar-color: $color4;
+        }
+
+        .container-fluid{
+            background-color: $color3;
+        }
     }
     
     .navbar-toggler{
@@ -113,7 +127,18 @@ header{
     }
     
     .navbar-toggler-icon{
-        color: $color4 !important;
+        background{
+            image: var(--bs-navbar-toggler-icon-bg);
+        }
+        :hover{
+            color: white;
+        }
+    }
+
+    li.nav-item{
+        a:hover{
+            background-color: white;
+        }
     }
 }
 
@@ -128,14 +153,6 @@ header{
     font-family: "Roboto", serif;
 }
 
-    main{
-    background-image: linear-gradient(#293241,#29324138), url(../img/blue-background-7470781_1920.jpg);
-    background: {
-        size: cover;
-        repeat:no-repeat;
-        position: center;
-    };
-}
 
 //END MAIN
 
@@ -157,6 +174,10 @@ footer{
         a{
             font-size: 30px;
             color: $color4;
+        }
+
+        a:hover{
+            color: white;
         }
     }
     
@@ -199,7 +220,7 @@ footer{
 @media only screen and (min-width: 280px){
     header .logo{
         width: 100%;
-        position: relative;
+        position: absolute;
     }
 
     footer .priv{

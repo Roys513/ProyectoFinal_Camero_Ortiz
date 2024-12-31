@@ -1,9 +1,18 @@
+.reg{
+    background:{
+        image: linear-gradient(to bottom, #ffffff77, #ffffff77), url(../img/Imgperro1.jpg);
+        size:cover;
+        position:center;
+        attachment:fixed;
+    }
+}
+
 .r-h1{
     text-align: center;
     padding-top: 20px;
-    color: #a7c4e9;
+    color: #293241;
     font-size: 200%;
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 1px black;
 }
     
 .r-container{
@@ -12,15 +21,17 @@
     margin:20px auto 0px auto;
 
     form{
+        background-color: #f0f0f068;
         display: flex;
         flex-wrap:wrap;
         justify-content:space-between;
+        padding: 30px 20px;
         margin: 10px 12px 0 0;
         
         .form-group{
             margin-bottom: 40px;
             font-size: 12px;  
-            color: #98C1D9;  
+            color: #293241;  
             
             input{
                 padding: 12px 100px 12px 10px;
