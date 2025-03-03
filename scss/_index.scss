@@ -233,11 +233,6 @@ font-style: normal;
             .catcard{
                 height: 120px;
                 width: 120px;
-            }
-            img{
-
-            }
-            h2{}
         }
     }
 }
@@ -252,7 +247,7 @@ font-style: normal;
         grid-template-rows: 100px 50px;
         .wh1{
             grid-row: 1/2;
-            font-size: 500%;
+            font-size: 3rem;
         }
 
         p{
@@ -319,4 +314,5 @@ font-style: normal;
             }
         }
     }
+}
 }
